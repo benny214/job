@@ -148,15 +148,15 @@ body{
 }
 .form__label{
 	position:absolute;
-	top: 23px;
-	left: 18px;
+	top: 7px;
+	left: 14px;
 	font-family: 'roboto_ltregular';
 	font-size: 1.25em;
 	color: #ccc;
 }
 .form__input{
 	width: 300px;
-	padding: 52px 1px 164px 18px;
+	padding: 36px 3px 133px 12px;
 	font-size: 1.5em;
 	border:0;
 	&:nth-of-type(1){
@@ -174,7 +174,7 @@ body{
 }
 .form__control{
 	border:none;
-	padding: 18px 54px;
+	padding: 15px 54px;
 	font-size: 1.25em;
 	color:#fff;
 	display:inline-block;
