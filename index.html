@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+		<head>
+				<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				<title></title>
+				<meta name="description" content="">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+				<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+				<link rel="stylesheet" href="css/main.css">
+
+				<!--[if lt IE 9]>
+						<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+						<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+				<![endif]-->
+		</head>
+		<body>
+
+			<div class="wrapper">
+
+					<button class="open-popup">Зарегистрироваться</button>
+					<!--заливка-->
+					<div class="overlay"></div>
+					<!--попап форма-->
+					<div class="popup">
+						<i class="fa fa-user"></i>
+						<i class="fa fa-picture-o"></i>
+						<i class="fa fa-check"></i>
+						<form class="popup__form">
+							<ul class="form__list">
+
+								<li class="form__item">
+									<label for="name" class="form__label">Имя</label>
+									<input class="form__input" type="text" id="name">
+								</li><!-- 
+
+								 --><li class="form__item">
+									<label for="surname" class="form__label">Фамилия</label>
+									<input type="text" class="form__input" id="surname">
+								</li><!-- 
+
+								 --><li class="form__item">
+									<label for="email" class="form__label">Эл. почта</label>
+									<input type="text" class="form__input" id="email">
+								</li><!-- 
+
+								 --><li class="form__item">
+									<label for="pass" class="form__label">Пароль</label>
+									<input type="text" class="form__input" id="pass">
+								</li>
+
+							</ul>
+							<button class="form__control" type="reset">Отменить</button><!-- 
+							 --><button class="form__control" type="">Назад</button><!-- 
+							 --><button class="form__control" type="">Продолжить</button>
+						</form>
+					</div>
+
+			</div><!--end wrapper-->
+
+				<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+				<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+				<script src="js/main.js"></script>
+		</body>
+</html>
