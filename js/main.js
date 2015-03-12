@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 	$('.form__control').on('click', function(e){
 		e.preventDefault();
 
@@ -44,6 +45,16 @@ $(document).ready(function(){
 			reqPos = slide.offset().left - sliderOffset;
 		}
 
+	});
+
+	$('.open_popup').click(function() {
+
+		var popup_id = $('#' + $(this).attr("rel"));
+
+		$(popup_id).show();$('.overlay').show();
+	});
+	$('.popup .close, .overlay').click(function() {
+		$('.overlay, .popup').hide();
 	});
 
 

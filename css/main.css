@@ -59,7 +59,6 @@ body {
   text-align: center; }
 
 .open-popup {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,7 +74,9 @@ body {
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2); }
 
 .overlay {
+  display: none;
   position: fixed;
+  z-index: 999;
   opacity: 0.5;
   filter: alpha(opacity=50);
   top: 0;
@@ -85,7 +86,9 @@ body {
   background: #000; }
 
 .popup {
+  display: none;
   width: 602px;
+  z-index: 1000;
   position: absolute;
   top: 50%;
   left: 50%;

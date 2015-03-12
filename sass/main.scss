@@ -99,7 +99,6 @@ body{
 	text-align: center;
 }
 .open-popup{
-	display:none;
 	@include centerer;
 	cursor:pointer;
 	background:#009bbf;
@@ -112,15 +111,21 @@ body{
 	box-shadow:0 0 0 4px rgba(0,0,0,0.2);
 }
 .overlay{
-	// display:none;
+	display:none;
 	position:fixed;
+	z-index: 999;
 	opacity:0.5;
 	filter:alpha(opacity=50);
-	top:0; left:0; right:0; bottom:0;
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0;
 	background:#000;
 }
 .popup{
+	display:none;
 	width:602px;
+	z-index: 1000;
 	@include centerer
 }
 .tabs__item .fa{
