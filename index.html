@@ -25,37 +25,66 @@
 					<div class="overlay"></div>
 					<!--попап форма-->
 					<div class="popup">
-						<i class="fa fa-user"></i>
-						<i class="fa fa-picture-o"></i>
-						<i class="fa fa-check"></i>
-						<form class="popup__form">
-							<ul class="form__list">
 
-								<li class="form__item">
-									<label for="name" class="form__label">Имя</label>
-									<input class="form__input" type="text" id="name">
-								</li><!-- 
+						<ul class="tabs">
+							<li class="tabs__item">
+								<a href="#one"><i class="fa fa-user active"></i></a>
+							</li>
+							<li class="tabs__item">
+								<a href="#two"><i class="fa fa-picture-o"></i></a>
+							</li>
+							<li class="tabs__item">
+								<a href="#three"><i class="fa fa-check"></i></a>
+							</li>
 
-								 --><li class="form__item">
-									<label for="surname" class="form__label">Фамилия</label>
-									<input type="text" class="form__input" id="surname">
-								</li><!-- 
+						</ul>
 
-								 --><li class="form__item">
-									<label for="email" class="form__label">Эл. почта</label>
-									<input type="text" class="form__input" id="email">
-								</li><!-- 
-
-								 --><li class="form__item">
-									<label for="pass" class="form__label">Пароль</label>
-									<input type="text" class="form__input" id="pass">
+						<div class="tabs__content">
+							<ul class="slider__list">
+							
+								<li class="slider__item" id="one">
+									<div class="tri"></div>
+									<form class="popup__form">
+										<ul class="form__list">
+									
+											<li class="form__item">
+												<label for="name" class="form__label">Имя</label>
+												<input class="form__input" type="text" id="name">
+											</li><!-- 
+									
+											 --><li class="form__item">
+												<label for="surname" class="form__label">Фамилия</label>
+												<input type="text" class="form__input" id="surname">
+											</li><!-- 
+									
+											 --><li class="form__item">
+												<label for="email" class="form__label">Эл. почта</label>
+												<input type="text" class="form__input" id="email">
+											</li><!-- 
+									
+											 --><li class="form__item">
+												<label for="pass" class="form__label">Пароль</label>
+												<input type="text" class="form__input" id="pass">
+											</li>
+									
+										</ul>
+									</form>
 								</li>
-
+							
+								<li class="slider__item" id="two">
+									<div class="tri"></div>
+									<input type="file" name="file" accept="image/jpeg,image/png,image/gif">
+								</li>
+							
+								<li class="slider__item" id="three">
+										<input type="text">
+								</li>
+							
 							</ul>
-							<button class="form__control" type="reset">Отменить</button><!-- 
-							 --><button class="form__control" type="">Назад</button><!-- 
-							 --><button class="form__control" type="">Продолжить</button>
-						</form>
+						</div>
+						<button class="form__control" type="reset">Отменить</button><!-- 
+									 --><button class="form__control" type="">Назад</button><!-- 
+									 --><button class="form__control" type="">Продолжить</button>
 					</div>
 
 			</div><!--end wrapper-->
