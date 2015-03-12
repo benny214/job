@@ -35,61 +35,73 @@
 							<li class="tabs__item">
 								<a href="#three"><i class="fa fa-check"></i></a>
 							</li>
-
 						</ul>
 
-						<div class="tabs__content">
-							<ul class="slider__list">
-							
-								<li class="slider__item" id="one">
-									<div class="tri"></div>
-									<form class="popup__form">
-										<ul class="form__list">
+							<div class="slider">
+								<div class="slider__list--wrap">
+									<ul class="slider__list">
 									
-											<li class="form__item">
-												<label for="name" class="form__label">Имя</label>
-												<input class="form__input" type="text" id="name" required>
-											</li><!-- 
+										<li class="slider__item active">
+											<div class="tri"></div>
+											<form class="popup__form">
+												<ul class="form__list">
+											
+													<li class="form__item">
+														<label for="name" class="form__label">Имя</label>
+														<input class="form__input" type="text" id="name" required>
+													</li><!-- 
+											
+													 --><li class="form__item">
+														<label for="surname" class="form__label">Фамилия</label>
+														<input type="text" class="form__input" id="surname" required>
+													</li><!-- 
+											
+													 --><li class="form__item">
+														<label for="email" class="form__label">Эл. почта</label>
+														<input type="email" class="form__input" id="email" required>
+													</li><!-- 
+											
+													 --><li class="form__item">
+														<label for="pass" class="form__label">Пароль</label>
+														<input type="password" class="form__input" id="pass" required>
+													</li>
+											
+												</ul>
+											</form>
+										</li>
 									
-											 --><li class="form__item">
-												<label for="surname" class="form__label">Фамилия</label>
-												<input type="text" class="form__input" id="surname" required>
-											</li><!-- 
+										<li class="slider__item ">
+											<div class="tri"></div>
+											<form class="popup__upload">
+												<p>
+													Загрузить изображение 
+													<i class="fa fa-picture-o"></i>
+												</p>
+												<input type="file" name="file" accept="image/jpeg,image/png,image/gif">
+											</form>
+										</li>
 									
-											 --><li class="form__item">
-												<label for="email" class="form__label">Эл. почта</label>
-												<input type="email" class="form__input" id="email" required>
-											</li><!-- 
+										<li class="slider__item ">
+											<form class="popup__pass">
+												<label for="submit-pass">Подтвердите пароль</label>
+													<input type="password" id="submit-pass">
+											</form>
+										</li>
 									
-											 --><li class="form__item">
-												<label for="pass" class="form__label">Пароль</label>
-												<input type="password" class="form__input" id="pass" required>
-											</li>
-									
-										</ul>
-									</form>
-								</li>
-							
-								<li class="slider__item" id="two">
-									<div class="tri"></div>
-									<input type="file" name="file" accept="image/jpeg,image/png,image/gif">
-								</li>
-							
-								<li class="slider__item" id="three">
-										<input type="text">
-								</li>
-							
-							</ul>
+									</ul>
+								</div>
+								<div class="slider__controls">
+							<button class="form__control close" >Отменить</button><!-- 
+										 --><button class="form__control slider__controls-button_prev" >Назад</button><!-- 
+										 --><button class="form__control slider__controls-button_next" >Продолжить</button>
 						</div>
-						<button class="form__control" type="reset">Отменить</button><!-- 
-									 --><button class="form__control" type="">Назад</button><!-- 
-									 --><button class="form__control" type="submit">Продолжить</button>
+							</div>
+						
 					</div>
 
 			</div><!--end wrapper-->
 
-				<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-				<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+				<script src="js/vendor/jquery-1.11.2.min.js"></script>
 
 				<script src="js/main.js"></script>
 		</body>
